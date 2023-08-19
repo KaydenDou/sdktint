@@ -40,7 +40,7 @@
                     </a>
                 </li>
                 <li class="navbar__btn">
-                    <a onclick="openForm()" class="button">
+                    <a href="/" class="button">
                         Request a Quote
                     </a>
                 </li>
@@ -186,54 +186,6 @@
             </li>
         </ul>
     </section>
-    <div class="form-popup" id="myForm">
-        <form action="https://formsubmit.co/el/mowobu" method="POST">
-            <h3>Request a Quote: </h3>
-            <input type="text" name="fname" placeholder="First Name" required>
-            <input type="text" name="lname" placeholder="Last Name" required>
-            <input type="email" name="email" placeholder="Email Address" required>
-            <input type="text" name="phone" placeholder="Phone Number" required>
-            <input type="number" name="year" placeholder="Vehicle Year" required>
-            <input type="text" name="make" placeholder="Vehicle Make" required>
-            <input type="text" name="model" placeholder="Vehicle Model" required>
-            <textarea name="message" rows="4" placeholder="Questions, Concerns, Requests"></textarea>
-            <label>Is your vehicle already tinted?<input type="checkbox" name="tinted"></label>
-            <button type="submit">Send</button>
-            <button type="cancel" onclick="closeForm()">Cancel</button>
-        </form>
-    </div>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
-        function sendEmail(){
-            Email.send({
-            Host : "smtp.gmail.com",
-            Username : "sdktint@gmail.com",
-            Password : "tgvigtzvwmmhxyme",
-            To : 'sdktint@gmail.com',
-            From : document.getElementById("email").value,
-            Subject : "Quote Request",
-            Body : "Name: " + document.getElementById("fname").value + document.getElementById("lname").value
-                + "<br> Email: " + document.getElementById("email").value
-                + "<br> Phone: " + document.getElementById("phone").value
-                + "<br> Year: " + document.getElementById("year").value
-                + "<br> Make: " + document.getElementById("make").value
-                + "<br> Model: " + document.getElementById("model").value
-                + "<br> Message: " + document.getElementById("message").value
-                + "<br> Tinted: " + document.getElementById("tinted").value
-            }).then(
-            message => alert("Quote Sent Successfully")
-            );
-        }
-    </script>
-    <script>
-        function openForm() {
-        document.getElementById("myForm").style.display = "block";
-        }
-
-        function closeForm() {
-        document.getElementById("myForm").style.display = "none";
-        }
-    </script>
     <script src="nav.js"></script>
 </body>
 <footer>
