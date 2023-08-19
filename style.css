@@ -121,7 +121,7 @@ section {
     display: grid;
     place-items: center;
     align-content: center;
-    min-height: 100vh;
+    min-height: 150vh;
     margin: 0 auto;
     padding: 0;
     width: 100%;
@@ -161,6 +161,12 @@ section h2 {
 }
 
 #mycar {
+    margin: 10vh;
+    width: 50%;
+    border-radius: 50px;
+}
+
+#geologo {
     margin: 10vh;
     width: 50%;
     border-radius: 50px;
