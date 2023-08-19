@@ -185,12 +185,12 @@ h3 {
 
 table {
     border: 1px solid black;
-    width: 70%;
+    width: 40%;
     text-align: center;
 }
 
 th {
-    height: 4vh;
+    height: 3vh;
     padding: 10px;
 }
 
