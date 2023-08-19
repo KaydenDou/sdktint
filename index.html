@@ -7,6 +7,7 @@
     <title>sdk tint website</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <script defer src="scroll.js"></script>
 </head>
 <body>
     <nav class="navbar">
@@ -19,27 +20,27 @@
             </div>
             <ul class="navbar__menu">
                 <li class="navbar__item">
-                    <a href="/" class="navbar__links">
+                    <a href="#first" class="navbar__links">
                         Home
                     </a>
                 </li>
                 <li class="navbar__item">
-                    <a href="/" class="navbar__links">
+                    <a href="#second" class="navbar__links">
                         Portfolio
                     </a>
                 </li>
                 <li class="navbar__item">
-                    <a href="/" class="navbar__links">
+                    <a href="#third" class="navbar__links">
                         Pricing
                     </a>
                 </li>
                 <li class="navbar__item">
-                    <a href="/" class="navbar__links">
+                    <a href="#fourth" class="navbar__links">
                         Faqs
                     </a>
                 </li>
                 <li class="navbar__btn">
-                    <a href="/" class="button">
+                    <a onclick="openForm()" class="button">
                         Request a Quote
                     </a>
                 </li>
@@ -47,14 +48,194 @@
         </div>
     </nav>
     <script src="app.js"></script>
-    <div class="home">
-       asdf
+    <section class="hidden" id="first">
+        <h2>About Me ></h2>
+        <p>
+            I am a full time student attending school for computer science. I started out tinting my own car and it was enjoyable so I decided I want to pursue
+            this as my part time job as I work on getting my degree. Im learning quick and want to get more experience to become even better.
+        </p>
+        <img src="images/bg.jpg" alt="mycar" id="mycar">
+    </section>
+    <hr>
+    <section class="hidden" id="why">
+        <h2>Why Me ></h2>
+        <p>
+            I am still learning as of now. As such, I am charging very good prices, but I also try my best to put out quality work. I use high quality film from Geoshield to ensure
+            a quality and long lasting tint job.
+        </p>
+        <img src="" alt="">
+    </section>
+    <hr>
+    <section class="hidden" id="second">
+        <h2>Portfolio ></h2>
+        <figure data-behold-id="rrjszwI2nyMDSC0nWeLb"></figure>
+        <script src="https://w.behold.so/widget.js" type="module"></script>
+    </section>
+    <hr>
+    <section class="hidden" id="third">
+        <h2>Pricing ></h2>
+        <p>
+            PRICING IS SUBJECT TO CHANGE as I am still learning, as of now these are the current prices for the film I am offering. These are general prices, pricing
+            depends on the difficulty of your specific vehicle. Any film shade and type can be ordered upon request.
+        </p>
+        <h3>*For information on the different types of film see the faqs section.*</h3>
+        <table>
+            <tr>
+                <th></th>
+                <th>OK</th>
+                <th>GOOD</th>
+                <th>REALLY GOOD</th>
+                <th>GREAT</th>
+                <th>BEST</th>
+            </tr>
+            <tr>
+                <th></th>
+                <th>Dyed</th>
+                <th>ProClassic Dyed</th>
+                <th>C2 Carbon</th>
+                <th>ProNano Ceramic</th>
+                <th>Apex Ultra Super Ceramic</th>
+            </tr>
+            <tr>
+                <th>Truck</th>
+                <th>$90</th>
+                <th>N/A</th>
+                <th>$170</th>
+                <th>N/A</th>
+                <th>N/A</th>
+            </tr>
+            <tr>
+                <th>Coupe</th>
+                <th>$100</th>
+                <th>N/A</th>
+                <th>$180</th>
+                <th>N/A</th>
+                <th>N/A</th>
+            </tr>
+            <tr>
+                <th>Sedan</th>
+                <th>$110</th>
+                <th>N/A</th>
+                <th>$190</th>
+                <th>N/A</th>
+                <th>N/A</th>
+            </tr>
+            <tr>
+                <th>SUV</th>
+                <th>$120</th>
+                <th>N/A</th>
+                <th>$200</th>
+                <th>N/A</th>
+                <th>N/A</th>
+            </tr>
+            <tr>
+                <th>Removal</th>
+                <th>$75</th>
+            </tr>
+        </table>
+    </section>
+    <hr>
+    <section class="hidden" id="fourth">
+        <h2>Faqs ></h2>
+        <ul>
+            <li class="question">
+                What are the differences between the types of films?
+            </li>
+            <li class="answer">
+                Dyed Film is used for aesthetics and uv protection making your vehicle look good, and protecting yourself and your interior from the sun, 
+                meanwhile the carbon, ceramic, and super ceramic add onto those benefits by offering different levels of heat rejection, keeping your car cool.
+                As you go from carbon, to ceramic, to super ceramic, the amount of heat rejected increases as well.
+            </li>
+            <li class="question">
+                Why is removal of old tint a seperate charge?
+            </li>
+            <li class="answer">
+                Due to the usage of cheap or failing tint, old tint can be very difficult to remove and sometimes takes hours. The adhesive left behind by the old tint must be removed completely
+                or else the new tint applied will not be able to be applied. Even a tiny bit of adhesive left behind can ruin a tint job. As such, please do not remove your own tint as
+                improper removal is difficult to fix.
+            </li>
+            <li class="question">
+                What are your hours?
+            </li>
+            <li class="answer">
+                I am a full time student, and also have a part time job on mondays and tuesdays. We can find a time that works for both of us after receiving a quote.
+            </li>
+            <li class="question">
+                Will my defroster lines still work after removal?
+            </li>
+            <li class="answer">
+                DISCLAIMER: There is a chance that they will be damaged during removal, I have not damaged any yet, but on very old or cheap tint, the adhesive can damage the defroster lines.
+                Depending on the severity of the old tint, I will let you know the risk before working on it.
+            </li>
+            <li class="question">
+                How long do you take?
+            </li>
+            <li class="answer">
+                Depending on the vehicle, as of now I usually take around 3-5 hours to finish a full vehicle. Though I am working on becoming faster.
+            </li>
+            <li class="question">Why is there clear bubbles in my film after install?</li>
+            <li class="answer">
+                Due to weather conditions, water bubbles may remain in your tint until it evaporates, but after it does you cannot see it and nothing will remain. Different contamination
+                such as dirt, air bubbles, or fibers should be discussed.
+            </li>
+            <li class="question">
+                I have flaws in my tint
+            </li>
+            <li class="answer">Any major flaws should not have gone out, but if it does, contact me and I can redo it free of charge. But, small flaws can be present as dust in the air is
+                very hard to control and even the best shops will have small dirt specks in places. No tint job can come out completely perfect.
+            </li>
+        </ul>
+    </section>
+    <div class="form-popup" id="myForm">
+        <form action="https://formsubmit.co/el/mowobu" method="POST">
+            <h3>Request a Quote: </h3>
+            <input type="text" name="fname" placeholder="First Name" required>
+            <input type="text" name="lname" placeholder="Last Name" required>
+            <input type="email" name="email" placeholder="Email Address" required>
+            <input type="text" name="phone" placeholder="Phone Number" required>
+            <input type="number" name="year" placeholder="Vehicle Year" required>
+            <input type="text" name="make" placeholder="Vehicle Make" required>
+            <input type="text" name="model" placeholder="Vehicle Model" required>
+            <textarea name="message" rows="4" placeholder="Questions, Concerns, Requests"></textarea>
+            <label>Is your vehicle already tinted?<input type="checkbox" name="tinted"></label>
+            <button type="submit">Send</button>
+            <button type="cancel" onclick="closeForm()">Cancel</button>
+        </form>
     </div>
-    <div class="home">
-       asdf
-    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+            Email.send({
+            Host : "smtp.gmail.com",
+            Username : "sdktint@gmail.com",
+            Password : "tgvigtzvwmmhxyme",
+            To : 'sdktint@gmail.com',
+            From : document.getElementById("email").value,
+            Subject : "Quote Request",
+            Body : "Name: " + document.getElementById("fname").value + document.getElementById("lname").value
+                + "<br> Email: " + document.getElementById("email").value
+                + "<br> Phone: " + document.getElementById("phone").value
+                + "<br> Year: " + document.getElementById("year").value
+                + "<br> Make: " + document.getElementById("make").value
+                + "<br> Model: " + document.getElementById("model").value
+                + "<br> Message: " + document.getElementById("message").value
+                + "<br> Tinted: " + document.getElementById("tinted").value
+            }).then(
+            message => alert("Quote Sent Successfully")
+            );
+        }
+    </script>
+    <script>
+        function openForm() {
+        document.getElementById("myForm").style.display = "block";
+        }
+
+        function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+        }
+    </script>
+    <script src="nav.js"></script>
 </body>
 <footer>
-    asdfds
 </footer>
 </html>
