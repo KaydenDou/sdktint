@@ -163,12 +163,12 @@ section h2 {
 #mycar {
     margin: 10vh;
     width: 50%;
-    border-radius: 50px;
+    border-radius: 30px;
 }
 
 #geologo {
     margin: 10vh;
-    width: 50%;
+    width: 40%;
     display: flex;
 }
 
@@ -319,5 +319,17 @@ th, td {
 
     #mobile-menu.is-active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
+    }
+
+    table {
+        font-size: 0.7rem;
+    }
+
+    #mycar {
+        width: 70%;
+    }
+
+    #geologo {
+        width: 60%;
     }
 }
