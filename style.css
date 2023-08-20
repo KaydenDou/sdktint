@@ -491,4 +491,9 @@ textarea {
     .color {
         margin: 20vh auto;
     }
+
+    #arrow {
+        margin-top: 6vh;
+        width: 30%;
+    }
 }
