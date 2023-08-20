@@ -417,6 +417,10 @@ textarea {
         width: 60%;
     }
 
+    .form-control {
+        padding: 8px;
+    }
+
     form button {
         padding: 5px;
         width: 100px;
