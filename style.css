@@ -172,6 +172,12 @@ section h2 {
     border-radius: 30px;
 }
 
+#arrow {
+    margin-top: 10vh;
+    width: 15%;
+    border-radius: 40px;
+}
+
 #geologo {
     margin: 10vh;
     width: 40%;
@@ -314,7 +320,7 @@ textarea {
 }
 
 .tint__container {
-    width: 90%;
+    width: 80%;
     margin: 10vh 0;
 }
 
@@ -334,10 +340,14 @@ textarea {
 
 .description {
     position: absolute;
-    margin: 12% 5%;
+    margin: 15% 5%;
     font-size: 1vw;
     color: #fdfdfd;
     text-align: left;
+}
+
+#types {
+    margin-top: 10vh;
 }
 
 .chart {
