@@ -310,12 +310,12 @@ textarea {
 }
 
 .color {
-    margin: 60vh auto 60vh;
+    margin: 50vh auto 50vh;
 }
 
 .tint__container {
     width: 90%;
-    margin: 50px 0 50px;
+    margin: 10vh 0;
 }
 
 .tintimages {
@@ -472,5 +472,9 @@ textarea {
 
     .popup .contact {
         width: 90%;
+    }
+
+    .description {
+        font-size: 2vw;
     }
 }
