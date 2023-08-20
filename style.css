@@ -258,6 +258,7 @@ th, td {
     height: 90%;
     border-radius: 20px;
     top: 10000px;
+    overflow: auto;
 }
 
 form {
