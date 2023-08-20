@@ -9,8 +9,13 @@
 body {
     background-attachment: fixed;
     height: 100vh;
+    background-color: #fdfdfd;
+    transition: background-color 1s ease;
 }
 
+.change {
+    background-color: #2a2a2a;
+}
 
 .navbar {
     margin: 0;
@@ -26,6 +31,7 @@ body {
     font-size: 1.2rem;
     z-index: 999;
     transition: all 500ms ease-in-out;
+    filter: drop-shadow(0px 0px 7px #505050);
 }
 
 .navbar__container {
@@ -127,8 +133,9 @@ section {
     max-width: 1600px;
     border-radius: 10px;
     margin-top: 4vh;
-    background: white;
+    background: #fdfdfd;
     text-align: center;
+    transition: background-color 1s ease;
 }
 
 footer {
@@ -300,6 +307,44 @@ textarea {
 .popup.active .contact {
     top: 50%;
     transition: all 750ms ease;
+}
+
+.color {
+    margin: 60vh auto 60vh;
+}
+
+.tint__container {
+    width: 90%;
+    margin: 50px 0 50px;
+}
+
+.tintimages {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+.title {
+    position: absolute;
+    margin: 5% 5%;
+    font-size: 3.5vw;
+    color: #fdfdfd;
+}
+
+.description {
+    position: absolute;
+    margin: 12% 5%;
+    font-size: 1vw;
+    color: #fdfdfd;
+    text-align: left;
+}
+
+.chart {
+    position: absolute;
+    width: 30%;
+    top: 15%;
+    left: 15%;
 }
 
 @media(prefers-reduced-motion) {
