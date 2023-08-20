@@ -7,7 +7,6 @@
 }
 
 body {
-    /* background-color: #cde8ff; */
     background-attachment: fixed;
     height: 100vh;
 }
@@ -242,7 +241,7 @@ th, td {
     transform: translate(-50%, -50%);
     z-index: 1101;
     background: white;
-    width: 90%;
+    width: 50%;
     height: 90%;
     border-radius: 20px;
     top: 10000px;
@@ -424,5 +423,9 @@ textarea {
     form button {
         padding: 5px;
         width: 100px;
+    }
+
+    .popup .contact {
+        width: 90%;
     }
 }
