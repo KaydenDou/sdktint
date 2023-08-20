@@ -310,7 +310,7 @@ textarea {
 }
 
 .color {
-    margin: 50vh auto 50vh;
+    margin: 50vh auto;
 }
 
 .tint__container {
@@ -476,5 +476,9 @@ textarea {
 
     .description {
         font-size: 2vw;
+    }
+
+    .color {
+        margin: 20vh auto;
     }
 }
