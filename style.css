@@ -121,7 +121,7 @@ section {
     display: grid;
     place-items: center;
     align-content: center;
-    min-height: 150vh;
+    min-height: 130vh;
     margin: 0 auto;
     padding: 0;
     width: 100%;
@@ -218,6 +218,89 @@ th, td {
     width: 50%;
     text-align: center;
     margin-bottom: 100px;
+}
+
+.popup .overlay {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background:rgb(43, 43, 43);
+    opacity: .7;
+    z-index: 1100;
+    display: none;
+}
+
+.popup .contact {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1101;
+    background: white;
+    width: 90%;
+    height: 90%;
+    border-radius: 20px;
+    top: 10000px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 60%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+form h3 {
+    color: #555;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.form-control {
+    border: 0;
+    margin: 8px 0;
+    padding: 12px;
+    outline: none;
+    background: #f5f5f5;
+    font-size: 15px;
+    border-radius: 8px;
+}
+
+#quotebutton {
+    cursor: pointer;
+}
+
+form button {
+    padding: 10px;
+    background:#4f799c;
+    color: white;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 120px;
+    margin: 20px auto 0;
+    border-radius: 30px;
+}
+
+textarea {
+    resize: none;
+}
+
+.popup.active .overlay {
+    display: flex;
+}
+
+.popup.active .contact {
+    top: 50%;
+    transition: all 750ms ease;
 }
 
 @media(prefers-reduced-motion) {
@@ -332,5 +415,10 @@ th, td {
 
     #geologo {
         width: 60%;
+    }
+
+    form button {
+        padding: 5px;
+        width: 100px;
     }
 }

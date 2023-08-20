@@ -40,7 +40,7 @@
                     </a>
                 </li>
                 <li class="navbar__btn">
-                    <a href="/" class="button">
+                    <a onclick="togglePopup()" class="button" id="quotebutton">
                         Request a Quote
                     </a>
                 </li>
@@ -186,6 +186,25 @@
             </li>
         </ul>
     </section>
+
+    <div class="popup" id="popup-1">
+        <div class="overlay"></div>
+        <div class="contact">
+            <form action="https://formsubmit.co/el/mowobu" method="POST" autocomplete="off">
+                <h3>Request a Quote > </h3>
+                <input type="text" name="name" class="form-control" id="name" placeholder="Name:" required>
+                <input type="text" name="email" class="form-control" id="email" placeholder="Email:" required>
+                <input type="text" name="phone" class="form-control" id="phone" placeholder="Phone:">
+                <input type="text" name="year" class="form-control" id="year" placeholder="Year:" required>
+                <input type="text" name="make" class="form-control" id="make" placeholder="Make:" required>
+                <input type="text" name="model" class="form-control" id="model" placeholder="Model:" required>
+                <textarea name="message" rows="4" class="form-control" id="message" placeholder="Questions or Requests:"></textarea>
+                <button type="submit">Submit</button>
+                <button type="button" onclick="togglePopup()">Cancel</button>
+            </form>
+        </div>
+    </div>
+    <script src="popup.js"></script>
     <script src="nav.js"></script>
 </body>
 <footer>
