@@ -358,6 +358,10 @@ textarea {
     left: 15%;
 }
 
+h3.pricing {
+    font-size: 1rem;
+}
+
 @media(prefers-reduced-motion) {
     .hidden {
         transition: none;
